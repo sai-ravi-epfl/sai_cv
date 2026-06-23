@@ -1,13 +1,13 @@
 stages:
   - deploy
 
-deploy-pages:
+pages:
   stage: deploy
   script:
-    - echo "Publishing the static website"
-  pages: true
+    - echo "Publishing static CV site from public/"
   artifacts:
     paths:
       - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+

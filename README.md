@@ -1,34 +1,39 @@
-# Sai Sudharshan Ravi CV site
+# Sai Sudharshan Ravi CV
 
-A self-contained personal website for GitLab Pages. It uses plain HTML and CSS, so there is nothing to install.
+This repository contains a self-contained CV website for GitLab Pages. It uses
+plain HTML and CSS, so there are no package installs or build steps.
 
-## Deploy to GitLab Pages
+## Project layout
 
-1. Create a new **public** GitLab project named `sai-cv`.
-2. Upload every file from this folder, keeping the `public` directory and `.gitlab-ci.yml` at the repository root.
-3. Commit to the default branch.
-4. Wait for the CI pipeline to finish. GitLab Pages deploys the contents of `public`.
-5. In GitLab, open **Deploy > Pages** to copy the exact published URL.
+- `public/index.html` - the CV website
+- `public/assets/styles.css` - responsive styling
+- `public/assets/Sai_Sudharshan_Ravi_CV.pdf` - downloadable CV PDF
+- `public/assets/sai-sudharshan-ravi.jpg` - profile image
+- `public/assets/favicon.svg` - browser icon
+- `.gitlab-ci.yml` - GitLab Pages deployment pipeline
 
-GitLab Pages supports plain HTML, CSS, and JavaScript sites that are built and published through GitLab CI/CD. The included CI configuration publishes the repository's `public` directory.
+## Preview locally
 
-## Expected URL and QR code
+Open `public/index.html` in a browser. Because the site is static and all assets
+use relative paths, no local server is required.
 
-This package assumes:
+## Deploy on GitLab Pages
 
-`https://saisudharshan2000.gitlab.io/sai-cv/`
+1. Push this repository to GitLab.
+2. Wait for the `pages` CI job to finish on the default branch.
+3. Open **Deploy > Pages** in GitLab and use the published URL shown there.
 
-The QR code in `public/assets/qr-code-assumed-site-url.png` contains that address. Before adding it to a poster, open the deployed website and confirm that the exact address is correct. If your GitLab username, group, or project name differs, regenerate the QR code using the exact Pages URL.
+The pipeline publishes the contents of `public/`, which is the directory GitLab
+Pages expects for a static site artifact.
 
-## Files
+## Updating the CV
 
-- `public/index.html` - the website
-- `public/assets/styles.css` - the responsive styling
-- `public/assets/sai-sudharshan-ravi.jpg` - cropped profile image from the supplied CV image
-- `public/assets/Sai_Sudharshan_Ravi_CV.pdf` - downloadable PDF created from the supplied CV image
-- `public/assets/qr-code-assumed-site-url.png` - poster-ready QR code for the assumed deployment address
-- `.gitlab-ci.yml` - GitLab Pages deployment configuration
+Edit the text in `public/index.html`. Replace the PDF or portrait in
+`public/assets/` while keeping the same filenames, or update the matching links
+in `index.html`.
 
-## Update content later
+## QR code
 
-Edit the relevant text in `public/index.html`. Replace the CV PDF or portrait image in `public/assets` while keeping the file names, or update the matching links in `index.html`.
+`public/assets/qr-code-assumed-site-url.png` and
+`public/assets/qr-code-url.txt` are optional helper files. They contain an
+assumed URL, so regenerate them after deployment if the Pages URL differs.
