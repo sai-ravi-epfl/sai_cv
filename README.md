@@ -5,10 +5,12 @@ plain HTML and CSS, so there are no local package installs or build steps.
 
 ## Project layout
 
-- `public/index.html` - the CV website
+- `public/index.html` - landing page with paper and CV options
+- `public/cv.html` - the CV website
 - `public/assets/styles.css` - responsive styling
+- `public/assets/ECOS_dratf_template_followed.pdf` - full paper PDF
 - `public/assets/Sai_Sudharshan_Ravi_CV.pdf` - downloadable CV PDF
-- `public/assets/sai-sudharshan-ravi.jpg` - profile image
+- `public/assets/headshot2.png` - profile image
 - `public/assets/favicon.svg` - browser icon
 - `.github/workflows/pages.yml` - GitHub Pages deployment workflow
 
