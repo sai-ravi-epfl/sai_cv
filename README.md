@@ -1,7 +1,7 @@
 # Sai Sudharshan Ravi CV
 
-This repository contains a self-contained CV website for GitLab Pages. It uses
-plain HTML and CSS, so there are no package installs or build steps.
+This repository contains a self-contained CV website for GitHub Pages. It uses
+plain HTML and CSS, so there are no local package installs or build steps.
 
 ## Project layout
 
@@ -10,21 +10,25 @@ plain HTML and CSS, so there are no package installs or build steps.
 - `public/assets/Sai_Sudharshan_Ravi_CV.pdf` - downloadable CV PDF
 - `public/assets/sai-sudharshan-ravi.jpg` - profile image
 - `public/assets/favicon.svg` - browser icon
-- `.gitlab-ci.yml` - GitLab Pages deployment pipeline
+- `.github/workflows/pages.yml` - GitHub Pages deployment workflow
 
 ## Preview locally
 
 Open `public/index.html` in a browser. Because the site is static and all assets
 use relative paths, no local server is required.
 
-## Deploy on GitLab Pages
+## Deploy on GitHub Pages
 
-1. Push this repository to GitLab.
-2. Wait for the `pages` CI job to finish on the default branch.
-3. Open **Deploy > Pages** in GitLab and use the published URL shown there.
+1. Create a GitHub repository named `sai_cv`.
+2. Push this repository to GitHub.
+3. In GitHub, open **Settings > Pages** and set the source to **GitHub Actions**.
+4. Wait for the `Deploy CV to GitHub Pages` workflow to finish.
 
-The pipeline publishes the contents of `public/`, which is the directory GitLab
-Pages expects for a static site artifact.
+Expected public URL:
+
+`https://saisudharshan2000.github.io/sai_cv/`
+
+The workflow publishes the contents of `public/`.
 
 ## Updating the CV
 
@@ -35,5 +39,5 @@ in `index.html`.
 ## QR code
 
 `public/assets/qr-code-assumed-site-url.png` and
-`public/assets/qr-code-url.txt` are optional helper files. They contain an
-assumed URL, so regenerate them after deployment if the Pages URL differs.
+`public/assets/qr-code-url.txt` target the expected GitHub Pages URL. Regenerate
+them after deployment if the published URL differs.
