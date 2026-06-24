@@ -8,9 +8,10 @@ plain HTML and CSS, so there are no local package installs or build steps.
 - `public/index.html` - landing page with paper and CV options
 - `public/cv.html` - the CV website
 - `public/assets/styles.css` - responsive styling
-- `public/assets/ECOS_dratf_template_followed.pdf` - full paper PDF
+- `public/assets/ECOS_draft_template_followed.pdf` - full paper PDF
 - `public/assets/Sai_Sudharshan_Ravi_CV.pdf` - downloadable CV PDF
 - `public/assets/headshot2.png` - profile image
+- `public/assets/*-logo.*` - university affiliation logos
 - `public/assets/favicon.svg` - browser icon
 - `.github/workflows/pages.yml` - GitHub Pages deployment workflow
 
