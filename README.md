@@ -26,7 +26,7 @@ use relative paths, no local server is required.
 
 Expected public URL:
 
-`https://saisudharshan2000.github.io/sai_cv/`
+`https://sai-ravi-epfl.github.io/sai_cv/`
 
 The workflow publishes the contents of `public/`.
 
