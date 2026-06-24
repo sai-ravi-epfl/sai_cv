@@ -10,7 +10,7 @@ plain HTML and CSS, so there are no local package installs or build steps.
 - `public/assets/styles.css` - responsive styling
 - `public/assets/ECOS_draft_template_followed.pdf` - full paper PDF
 - `public/assets/Sai_Sudharshan_Ravi_CV.pdf` - downloadable CV PDF
-- `public/assets/headshot2.png` - profile image
+- `public/assets/headshot3.png` - profile image
 - `public/assets/*-logo.*` - affiliation and experience logos
 - `public/assets/favicon.svg` - browser icon
 - `.github/workflows/pages.yml` - GitHub Pages deployment workflow
